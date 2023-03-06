@@ -12,7 +12,7 @@ function Home({ active }) {
     <section className={`home container ${active}`} id="home">
       <div className="pic" data-aos="fade-right">
         <img
-          src="./images/ibrahim.jpeg"
+          src="./images/ibrahim.WebP"
           alt="Ibrahim Ahmed"
           className="my-image"
         />
