@@ -4,7 +4,7 @@ function Header({ setActive, active, toggleMenue }) {
   return (
     <section className={`header ${active}`}>
       <div className="menu-btn" onClick={() => toggleMenue()}>
-        <i class="menu-icon fa-solid fa-bars"></i>
+        <i className="menu-icon fa-solid fa-bars"></i>
       </div>
       <div className="logo">
         <img src="./images/logo.svg" className="my-logo" alt="Ibrahim Ahmed" />
@@ -29,22 +29,22 @@ function Header({ setActive, active, toggleMenue }) {
         <ul>
           <li>
             <a href="#home">
-              <i class="fa-brands fa-facebook-f"></i>
+              <i className="fa-brands fa-facebook-f"></i>
             </a>
           </li>
           <li>
             <a href="#home">
-              <i class="fa-brands fa-linkedin-in"></i>
+              <i className="fa-brands fa-linkedin-in"></i>
             </a>
           </li>
           <li>
             <a href="#home">
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
           </li>
           <li>
             <a href="#home">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </li>
         </ul>

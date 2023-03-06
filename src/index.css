@@ -66,8 +66,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 6rem;
+  gap: 5%;
   min-height: 100vh;
   transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -106,6 +105,7 @@ ul {
 
 .intro .name {
   text-transform: uppercase;
+  text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
   line-height: 1;
@@ -155,6 +155,8 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background: var(--white);
+  z-index: 1000;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -167,7 +169,7 @@ ul {
 }
 
 .header .logo {
-  width: 10rem;
+  width: 12rem;
   margin-left: 2rem;
 }
 
@@ -235,4 +237,73 @@ ul {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .home {
+    gap: 1rem;
+  }
+
+  .home.active {
+    padding-left: 0;
+    gap: 1rem;
+  }
+
+  .home.active.container {
+    width: 90%;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  html {
+    font-size: 85%;
+  }
+
+  .container {
+    padding-top: 4rem;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home .pic {
+    width: 400px;
+  }
+
+  .intro {
+    width: 90%;
+  }
+
+  .intro p {
+    align-self: center;
+    line-height: 2;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .home .pic {
+    max-width: 90%;
+  }
+
+  .intro .name {
+    font-size: 2rem;
+    width: 100%;
+    align-self: center;
+  }
+
+  .intro .position {
+    font-size: 1.2;
+  }
 }
