@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Biography from "./components/biography";
 import Header from "./components/header";
 import Home from "./components/home";
+import Skills from "./components/skills";
 
 function App() {
   const [active, setActive] = useState("");
@@ -14,6 +15,7 @@ function App() {
       <Home active={active} />
       <Header toggleMenue={toggleMenue} active={active} />
       <Biography />
+      <Skills />
     </>
   );
 }

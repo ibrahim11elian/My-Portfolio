@@ -14,9 +14,11 @@ function Biography() {
         biography
       </h1>
       <p className="about-me" data-aos="zoom-in">
-        I strongly desire to constantly expand my skill set and push the
-        boundaries of what is possible in web development, allowing me to create
-        innovative and cutting-edge applications.
+        I studied computer science at the Faculty of Computers and Artificial
+        Intelligence CS major at Helwan University in Egypt, I strongly desire
+        to constantly expand my skill set and push the boundaries of what is
+        possible in web development, allowing me to create innovative and
+        cutting-edge applications.
       </p>
       <ul className="info" data-aos="fade-right">
         <li>
