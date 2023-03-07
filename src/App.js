@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Biography from "./components/biography";
 import Header from "./components/header";
 import Home from "./components/home";
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <Home active={active} />
       <Header toggleMenue={toggleMenue} active={active} />
+      <Biography />
     </>
   );
 }

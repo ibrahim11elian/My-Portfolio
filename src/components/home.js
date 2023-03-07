@@ -12,7 +12,7 @@ function Home({ active }) {
     <section className={`home container ${active}`} id="home">
       <div className="pic" data-aos="fade-right">
         <img
-          src="./images/ibrahim.WebP"
+          src="./images/ibrahim.webp"
           alt="Ibrahim Ahmed"
           className="my-image"
         />
@@ -30,7 +30,7 @@ function Home({ active }) {
           user-friendly web applications as a full-stack developer.
         </p>
         <button className="btn" data-aos="fade-up">
-          about me
+          <a href="#about">about me</a>
         </button>
       </div>
     </section>

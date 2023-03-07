@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header({ setActive, active, toggleMenue }) {
+function Header({ active, toggleMenue }) {
   return (
     <section className={`header ${active}`}>
       <div className="menu-btn" onClick={() => toggleMenue()}>
@@ -12,16 +12,24 @@ function Header({ setActive, active, toggleMenue }) {
       <nav className="nav-container">
         <ul>
           <li>
-            <a href="#home">home</a>
+            <a href="#home" onClick={() => toggleMenue()}>
+              home
+            </a>
           </li>
           <li>
-            <a href="#home">about</a>
+            <a href="#about" onClick={() => toggleMenue()}>
+              about
+            </a>
           </li>
           <li>
-            <a href="#home">portfolio</a>
+            <a href="#home" onClick={() => toggleMenue()}>
+              portfolio
+            </a>
           </li>
           <li>
-            <a href="#home">contact</a>
+            <a href="#home" onClick={() => toggleMenue()}>
+              contact
+            </a>
           </li>
         </ul>
       </nav>
