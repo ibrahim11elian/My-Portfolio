@@ -2,6 +2,7 @@
   --yellow: #ffcc0d;
   --black: #000;
   --white: #fff;
+  --white-transparent: #ffffffc1;
   --light-bg: #eee;
   --border-bold: 0.3rem solid var(--black);
   --border-light: 0.15rem solid var(--black);
@@ -46,7 +47,7 @@ body {
   margin: 0;
   overflow: hidden;
   transition: 0.2s linear !important;
-  height: 3000px;
+  height: 6000px;
 }
 
 body.active {
@@ -259,10 +260,11 @@ ul {
   padding-bottom: 0.2rem;
   text-transform: uppercase;
   margin: auto;
+  text-align: center;
 }
 
 .about-me {
-  width: 60%;
+  width: 70%;
   margin: 2rem auto 2rem auto;
 }
 
@@ -318,6 +320,105 @@ ul {
   font-size: 1.3rem;
 }
 
+.edu-list {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.edu-list .title {
+  background: var(--yellow);
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+.edu-list .item {
+  background: var(--light-bg);
+  width: 100%;
+  padding: 1rem;
+}
+
+.edu-list .item .name {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.edu-list .item .details {
+  line-height: 2;
+}
+
+.edu-list .item .details a {
+  text-decoration: underline;
+}
+
+.filter {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.project-list li {
+  justify-self: center;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  max-width: 30rem;
+}
+
+.project:hover .project-info {
+  top: 0;
+}
+
+.project .project-img {
+  width: 100%;
+}
+
+.project .project-info {
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--white-transparent);
+  text-align: center;
+  padding: 4rem 1rem 1rem 1rem;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.project .project-info .name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.project .project-info .links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991px) {
   html {
@@ -340,10 +441,6 @@ ul {
 
   .home.active.container {
     width: 90%;
-  }
-
-  .about-me {
-    width: 70%;
   }
 }
 
@@ -372,6 +469,10 @@ ul {
   .intro p {
     align-self: center;
     line-height: 2;
+  }
+
+  .edu-list {
+    width: 100%;
   }
 }
 
@@ -408,5 +509,17 @@ ul {
 
   .skill-tech {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .filter li .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .project {
+    max-width: unset;
+  }
+
+  .project .project-info {
+    padding: 4rem 1rem 1rem 1rem;
   }
 }

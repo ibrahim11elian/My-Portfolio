@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Biography from "./components/biography";
+import Education from "./components/education";
 import Header from "./components/header";
 import Home from "./components/home";
+import Portfolio from "./components/portfolio";
 import Skills from "./components/skills";
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <Header toggleMenue={toggleMenue} active={active} />
       <Biography />
       <Skills />
+      <Education />
+      <Portfolio />
     </>
   );
 }

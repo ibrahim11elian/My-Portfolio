@@ -22,7 +22,7 @@ function Header({ active, toggleMenue }) {
             </a>
           </li>
           <li>
-            <a href="#home" onClick={() => toggleMenue()}>
+            <a href="#portfolio" onClick={() => toggleMenue()}>
               portfolio
             </a>
           </li>
