@@ -69,6 +69,11 @@ function Project({ project }) {
       />
       <div className="project-info">
         <div className="name">{project.name}</div>
+        <div className="tags">
+          {project.tags.map((e, i) => {
+            return <span className="tag" key={i}>{`#${e}`}</span>;
+          })}
+        </div>
         <div className="links">
           {project.live ? (
             <a href={project.live} className="btn" target={"_blank"}>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Biography from "./components/biography";
+import ContactMe from "./components/contact_me";
 import Education from "./components/education";
 import Header from "./components/header";
 import Home from "./components/home";
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Education />
       <Portfolio />
+      <ContactMe />
     </>
   );
 }

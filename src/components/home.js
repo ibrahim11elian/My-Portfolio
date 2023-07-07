@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Home({ active }) {
   useEffect(() => {
@@ -11,10 +13,12 @@ function Home({ active }) {
   return (
     <section className={`home container ${active}`} id="home">
       <div className="pic" data-aos="fade-right">
-        <img
+        <LazyLoadImage
           src="./images/ibrahim.webp"
           alt="Ibrahim Ahmed"
           className="my-image"
+          placeholderSrc="./image/ibrahim200.webp"
+          effect="blur"
         />
       </div>
       <div className="intro">
