@@ -20,7 +20,7 @@ function Portfolio() {
   };
 
   return (
-    <section className="portfolio container" id="portfolio">
+    <section className="portfolio" id="portfolio">
       <h1 className="section-title" data-aos="fade-up">
         portfolio
       </h1>

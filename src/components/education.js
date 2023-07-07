@@ -3,7 +3,7 @@ import React from "react";
 
 function Education() {
   return (
-    <section className="education container">
+    <section className="education" id="education">
       <h1 className="section-title" data-aos="fade-up">
         education
       </h1>

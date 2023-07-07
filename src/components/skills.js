@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <section className="skills container" id="skills">
+    <section className="skills" id="skills">
       <h1 className="section-title" data-aos="fade-up">
         skills
       </h1>

@@ -11,7 +11,7 @@ function Home({ active }) {
     });
   }, []);
   return (
-    <section className={`home container ${active}`} id="home">
+    <section className={`home`} id="home">
       <div className="pic" data-aos="fade-right">
         <LazyLoadImage
           src="./images/ibrahim.webp"

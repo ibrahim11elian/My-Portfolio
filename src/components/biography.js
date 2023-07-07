@@ -9,7 +9,7 @@ function Biography() {
     });
   }, []);
   return (
-    <section className="about container" id="about">
+    <section className="about " id="about">
       <h1 className="section-title" data-aos="fade-up">
         biography
       </h1>
