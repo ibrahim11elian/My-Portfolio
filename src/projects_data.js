@@ -5,7 +5,7 @@ export const data = [
     img: "./images/projects/Password-generator-app.jpeg",
     live: "https://key-master.netlify.app/",
     link: "https://github.com/ibrahim11elian/password-generator",
-    tags: ["HTML5", "CSS", "React"],
+    tags: ["HTML5", "CSS", "ReactJS"],
     category: "front",
   },
   {
@@ -14,7 +14,7 @@ export const data = [
     img: "./images/projects/where-in-world.jpg",
     live: "https://where-in-the-world-countries.netlify.app/",
     link: "https://github.com/ibrahim11elian/where-in-the-world",
-    tags: ["HTML5", "CSS", "React", "React Router", "API"],
+    tags: ["HTML5", "CSS", "ReactJS", "React Router", "API"],
     category: "front",
   },
   {
@@ -40,7 +40,7 @@ export const data = [
     img: "./images/projects/weather.png",
     live: "https://weather-by-zip-code.herokuapp.com/",
     link: "https://github.com/ibrahim11elian/weather-app-py-zip-code",
-    tags: ["HTML5", "CSS", "javascript", "ES6", "Node JS", "Express JS", "API"],
+    tags: ["HTML5", "CSS", "javascript", "ES6", "NodeJS", "ExpressJS", "API"],
     category: "full",
   },
   {
@@ -49,7 +49,7 @@ export const data = [
     img: "./images/projects/shortly.jpg",
     live: "https://shortly-for-url.netlify.app/",
     link: "https://github.com/ibrahim11elian/url-shortening",
-    tags: ["HTML5", "CSS", "React", "Font awesome", "API"],
+    tags: ["HTML5", "CSS", "ReactJS", "Font Awesome", "API"],
     category: "front",
   },
   {
@@ -58,7 +58,7 @@ export const data = [
     img: "./images/projects/todo.jpg",
     live: "https://my-todo-real.netlify.app/",
     link: "https://github.com/ibrahim11elian/My-Todo",
-    tags: ["HTML5", "CSS", "React", "local-storage"],
+    tags: ["HTML5", "CSS", "ReactJS", "local-storage"],
     category: "front",
   },
   {
@@ -67,14 +67,14 @@ export const data = [
     img: "./images/projects/yellow.png",
     live: "https://ibrahim11elian.github.io/yellow-moon/",
     link: "https://github.com/ibrahim11elian/yellow-moon",
-    tags: ["HTML5", "CSS", "Font awesome"],
+    tags: ["HTML5", "CSS", "Font ِwesome"],
     category: "front",
   },
   {
     id: 8,
     name: "Image-Processing-API",
     link: "https://github.com/ibrahim11elian/Image-Processing-API",
-    tags: ["Node JS", "Express JS", "typescript", "Jasmine", "API"],
+    tags: ["NodeJS", "ExpressJS", "typescript", "Jasmine", "API"],
     category: "back",
   },
   {

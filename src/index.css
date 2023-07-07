@@ -3,6 +3,7 @@
   --black: #000;
   --white: #fff;
   --white-transparent: #ffffffc1;
+  --black-transparent: #00000096;
   --light-bg: #eee;
   --border-bold: 0.3rem solid var(--black);
   --border-light: 0.15rem solid var(--black);
@@ -409,6 +410,7 @@ section {
 
 .project .project-info .tags {
   margin-top: 1rem;
+  word-wrap: break-word;
 }
 
 .project .project-info .tags .tag {
@@ -421,6 +423,11 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.project .project-info .links .btn {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .contact-form {
@@ -539,6 +546,7 @@ section {
 .scroll-to-top:hover {
   box-shadow: 0px 6px 12px 2px rgb(31 31 31 / 21%) !important;
 }
+
 .Toastify__toast {
   background: var(--yellow) !important;
 }
@@ -577,6 +585,16 @@ section {
 
   .home .pic {
     width: 400px;
+  }
+
+  .overlay.active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: var(--black-transparent);
+    z-index: 99;
   }
 
   .intro {
