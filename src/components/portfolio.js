@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from "react";
 import { data } from "../projects_data";
-const backImage = "./images/back.jpg";
+const backImage = "./images/back.svg";
 
 function Portfolio() {
   const [projects, setProjects] = useState([...data]);
