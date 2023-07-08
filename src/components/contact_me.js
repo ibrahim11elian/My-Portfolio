@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 const eData = {
   name: undefined,
   email: undefined,
-  phone: undefined,
+  number: undefined,
   msg: undefined,
 };
 
@@ -32,7 +32,7 @@ function ContactMe() {
     }
     const senderName = emailData.name;
     const senderEmail = emailData.email;
-    const senderPhone = emailData.phone;
+    const senderPhone = emailData.number;
     const msg = emailData.msg;
 
     try {
