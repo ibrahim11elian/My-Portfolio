@@ -1,3 +1,4 @@
+// all data about the projects rendered in my portfolio
 export const data = [
   {
     id: 1,
