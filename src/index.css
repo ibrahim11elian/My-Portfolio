@@ -270,17 +270,17 @@ label {
 
 #star-2 {
   position: absolute;
-  transform: rotateZ(36deg);
-  -webkit-transform: rotateZ(36deg);
-  -moz-transform: rotateZ(36deg);
-  -ms-transform: rotateZ(36deg);
-  -o-transform: rotateZ(36deg);
+  transform: rotateZ(35deg);
+  -webkit-transform: rotateZ(35deg);
+  -moz-transform: rotateZ(35deg);
+  -ms-transform: rotateZ(35deg);
+  -o-transform: rotateZ(35deg);
 }
 
 .star {
   top: -3px;
-  left: -7px;
-  font-size: 42px;
+  left: -8px;
+  font-size: 45px;
   line-height: 24px;
   color: var(--yellow);
   transition: 0.5s ease color;
