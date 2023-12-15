@@ -1,60 +1,122 @@
 import React from "react";
+import { useAppContext } from "../utilities/context";
 
-function Header({ active, toggleMenu }) {
-  function setActive(e) {
+function Header() {
+  // Destructure values from the app context
+  const { theme, active, setActive, toggleMenu, toggleTheme } = useAppContext();
+
+  // Handle scroll events
+  window.onscroll = () => {
+    if (active === "active") {
+      // Close the menu if the screen is less than 991 pixels wide
+      if (window.innerWidth < 991) {
+        setActive(() => "");
+        document.body.classList.remove("active");
+        document.querySelector(".menu-icon").classList.remove("fa-xmark");
+      }
+
+      // Highlight the navigation link corresponding to the current section
+      document.querySelectorAll("section").forEach((sec) => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
+
+        if (top >= offset && top < offset + height) {
+          document
+            .querySelectorAll(".nav-container ul li a")
+            .forEach((links) => {
+              links.classList.remove("active");
+              document
+                .querySelector(".nav-container ul li a[href*=" + id + "]")
+                .classList.add("active");
+            });
+        }
+      });
+    }
+  };
+
+  // Set the active navigation link on click
+  function setSectionActive(e) {
     document.querySelectorAll(".nav-container ul li a").forEach((links) => {
       links.classList.remove("active");
     });
     e.target.classList.add("active");
   }
+
+  // Navigation links
+  let navigation = [
+    "home",
+    "about",
+    "skills",
+    "education",
+    "portfolio",
+    "contact",
+  ];
+
+  // Render the Header component
   return (
     <>
+      {/* Overlay to close the menu on click */}
       <span className={`overlay ${active}`} onClick={toggleMenu}></span>
+
+      {/* Navigation bar */}
       <nav className={`header ${active}`}>
-        <div className="menu-btn" onClick={() => toggleMenu()}>
-          <i className="menu-icon fa-solid fa-bars" />
+        {/* Menu button */}
+        <div className={`menu-btn `} onClick={() => toggleMenu()}>
+          <i
+            className={`menu-icon fa-solid fa-bars ${active ? "fa-xmark" : ""}`}
+          />
         </div>
+
+        {/* Theme switcher */}
+        <div className="switcher">
+          <input
+            type="checkbox"
+            id="toggle_checkbox"
+            defaultChecked={theme === "dark" ? true : false}
+            onClick={() => toggleTheme()}
+          ></input>
+          <label htmlFor="toggle_checkbox">
+            <div id="star">
+              <div className="star" id="star-1">
+                ★
+              </div>
+              <div className="star" id="star-2">
+                ★
+              </div>
+            </div>
+            <div id="moon"></div>
+          </label>
+        </div>
+
+        {/* Logo */}
         <div className="logo">
           <img
-            src="./images/logo.svg"
+            src={
+              theme === "light" ? "./images/logo.svg" : "./images/logo_dark.svg"
+            }
             className="my-logo"
             alt="Ibrahim Ahmed"
           />
         </div>
-        <div className="nav-container" onClick={(e) => setActive(e)}>
+
+        {/* Navigation links */}
+        <div className="nav-container" onClick={(e) => setSectionActive(e)}>
           <ul>
-            <li>
-              <a href="#home" onClick={() => toggleMenu()}>
-                home
-              </a>
-            </li>
-            <li>
-              <a href="#about" onClick={() => toggleMenu()}>
-                about
-              </a>
-            </li>
-            <li>
-              <a href="#skills" onClick={() => toggleMenu()}>
-                skills
-              </a>
-            </li>
-            <li>
-              <a href="#education" onClick={() => toggleMenu()}>
-                education
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio" onClick={() => toggleMenu()}>
-                portfolio
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => toggleMenu()}>
-                contact
-              </a>
-            </li>
+            {navigation.map((element, index) => {
+              return (
+                <li key={index}>
+                  <a href={`#${element}`} onClick={() => toggleMenu()}>
+                    {element}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
+
+        {/* Social links */}
         <div className="social-links">
           <ul>
             <li>
