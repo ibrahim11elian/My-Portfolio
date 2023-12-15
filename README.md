@@ -47,7 +47,7 @@ Feel free to explore the site, check out my projects, and get in touch using the
 
 ## Screenshots
 
-![Screenshot](./public/images/screenshot.png)
+![Screenshot](./public/images/screenshot2.png)
 
 ## Contact
 
