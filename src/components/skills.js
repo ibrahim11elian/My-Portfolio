@@ -1,37 +1,48 @@
 import React from "react";
+import { skills } from "../data/skills_data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css/bundle";
+
+// Base URL for skill icons
+let iconBaseUrl = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/";
 
 function Skills() {
+  // Get the window width for responsive design
+  const width = window.innerWidth;
+
   return (
     <section className="skills" id="skills">
       <h1 className="section-title" data-aos="fade-up">
         skills
       </h1>
-      <div className="skill-tech">
-        <ProgressPar skill={"HTML"} percent={93} aos="fade-right" />
-        <ProgressPar skill={"CSS"} percent={85} aos="fade-left" />
-        <ProgressPar skill={"javascript"} percent={80} aos="fade-right" />
-        <ProgressPar skill={"typescript"} percent={72} aos="fade-left" />
-        <ProgressPar skill={"postgreSQL"} percent={70} aos="fade-right" />
-        <ProgressPar skill={"express JS"} percent={80} aos="fade-left" />
-        <ProgressPar skill={"react"} percent={76} aos="fade-right" />
-        <ProgressPar skill={"node JS"} percent={84} aos="fade-left" />
-      </div>
+
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={10}
+        slidesPerView={width > 900 ? 8 : 4} // Responsive number of slides
+        autoplay={{ delay: 0 }}
+        loop={true}
+        data-aos="fade-left"
+        speed={2000}
+      >
+        {/* Map through the skills data and create Swiper slides */}
+        {Object.keys(skills).map((skill, i) => {
+          return (
+            <SwiperSlide key={i}>
+              <img
+                className="skill-img"
+                src={`${iconBaseUrl}${skills[skill]}`}
+                title={skill}
+                alt={skill}
+                loading="lazy"
+              />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </section>
   );
 }
-
-const ProgressPar = ({ skill, percent, aos }) => {
-  return (
-    <div className="par" data-aos={aos}>
-      <div className="content" style={{ width: ` ${percent}%` }}>
-        <span>{skill}</span>
-        <span>
-          {percent}
-          {"%"}
-        </span>
-      </div>
-    </div>
-  );
-};
 
 export default Skills;
