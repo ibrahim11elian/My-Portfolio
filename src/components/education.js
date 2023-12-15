@@ -3,14 +3,21 @@ import React from "react";
 
 function Education() {
   return (
+    // Education section
     <section className="education" id="education">
+      {/* Section title */}
       <h1 className="section-title" data-aos="fade-up">
         education
       </h1>
+
+      {/* List of education items */}
       <ul className="edu-list">
+        {/* Title of the education section */}
         <li className="title" data-aos="fade-up">
           education
         </li>
+
+        {/* First education item */}
         <li className="item" data-aos="fade-left">
           <div className="date">
             (<span className="start-date">2018</span> -{" "}
@@ -23,6 +30,8 @@ function Education() {
             Bachelor's degree, Computer Science • Helwan, Cairo Governorate
           </div>
         </li>
+
+        {/* Second education item */}
         <li className="item" data-aos="fade-right">
           <div className="date">
             (<span className="start-date">2021</span> -{" "}
@@ -35,6 +44,7 @@ function Education() {
           <div className="details">
             <p>Technical Training:</p>
             <ul>
+              {/* List of technical training points */}
               <li>- Learn JavaScript Data Types</li>
               <li>- Understand logic and control flow</li>
               <li>- Learn how to write proper and correct JavaScript Syntax</li>
@@ -42,6 +52,7 @@ function Education() {
               <li>- Modify web content using Javascript</li>
               <li>- Manage website performance</li>
             </ul>
+            {/* Link to the certificate */}
             <a
               href="https://graduation.udacity.com/confirm/9DHPDSHP"
               target={"_blank"}
@@ -50,6 +61,8 @@ function Education() {
             </a>
           </div>
         </li>
+
+        {/* Third education item */}
         <li className="item" data-aos="fade-left">
           <div className="date">
             (<span className="start-date">2022</span> -{" "}
@@ -62,6 +75,7 @@ function Education() {
           <div className="details">
             <p>Technical Training:</p>
             <ul>
+              {/* List of technical training points */}
               <li>
                 - Understand the fundamental tools needed to build a basic API
                 in a way that is both scalable, and maintainable.
@@ -70,6 +84,7 @@ function Education() {
                 - Write TypeScript to reduce developing errors. Manage
                 async/await, promises, and error handling with TypeScript.
               </li>
+              {/* Additional technical training points */}
               <li>
                 - Create test units with Jasmine. Use Express to build APIs.
               </li>
@@ -87,6 +102,7 @@ function Education() {
               <li>- Build an automated pipeline and scripts.</li>
               <li>- Create documentation using markdown files and diagrams.</li>
             </ul>
+            {/* Link to the certificate */}
             <a
               href="https://graduation.udacity.com/confirm/HXYGKYQZ"
               target={"_blank"}
