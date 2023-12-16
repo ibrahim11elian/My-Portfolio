@@ -39,7 +39,7 @@ export const data = [
     id: 4,
     name: "Weather-Journal App",
     img: "./images/projects/weather.png",
-    live: "https://weather-by-zip-code.herokuapp.com/",
+    live: "https://weather-journal-app-x9ih.onrender.com/",
     link: "https://github.com/ibrahim11elian/weather-app-py-zip-code",
     tags: ["HTML5", "CSS", "javascript", "ES6", "NodeJS", "ExpressJS", "API"],
     category: "full",
