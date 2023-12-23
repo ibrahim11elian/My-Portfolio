@@ -1,9 +1,19 @@
+import PasswordGenerator from "../images/projects/Password-generator-app.jpeg";
+import WhereInTheWorld from "../images/projects/where-in-world.jpg";
+import WeatherJournalApp from "../images/projects/weather.png";
+import ShortlyURL from "../images/projects/shortly.jpg";
+import MyTodo from "../images/projects/todo.jpg";
+import YellowMoon from "../images/projects/yellow.png";
+import AdviceGenerator from "../images/projects/advice.jpg";
+import OnlineEducation from "../images/projects/education.png";
+import ECommerceProduct from "../images/projects/e-commerce.jpg";
+
 // all data about the projects rendered in my portfolio
 export const data = [
   {
     id: 1,
     name: "Password generator app",
-    img: "./images/projects/Password-generator-app.jpeg",
+    img: PasswordGenerator,
     live: "https://key-master.netlify.app/",
     link: "https://github.com/ibrahim11elian/password-generator",
     tags: ["HTML5", "CSS", "ReactJS"],
@@ -12,7 +22,7 @@ export const data = [
   {
     id: 2,
     name: "where in the world countries",
-    img: "./images/projects/where-in-world.jpg",
+    img: WhereInTheWorld,
     live: "https://where-in-the-world-countries.netlify.app/",
     link: "https://github.com/ibrahim11elian/where-in-the-world",
     tags: ["HTML5", "CSS", "ReactJS", "React Router", "API"],
@@ -38,7 +48,7 @@ export const data = [
   {
     id: 4,
     name: "Weather-Journal App",
-    img: "./images/projects/weather.png",
+    img: WeatherJournalApp,
     live: "https://weather-journal-app-x9ih.onrender.com/",
     link: "https://github.com/ibrahim11elian/weather-app-py-zip-code",
     tags: ["HTML5", "CSS", "javascript", "ES6", "NodeJS", "ExpressJS", "API"],
@@ -47,7 +57,7 @@ export const data = [
   {
     id: 5,
     name: "Shortly URL shortening API",
-    img: "./images/projects/shortly.jpg",
+    img: ShortlyURL,
     live: "https://shortly-for-url.netlify.app/",
     link: "https://github.com/ibrahim11elian/url-shortening",
     tags: ["HTML5", "CSS", "ReactJS", "Font Awesome", "API"],
@@ -56,7 +66,7 @@ export const data = [
   {
     id: 6,
     name: "My Todo",
-    img: "./images/projects/todo.jpg",
+    img: MyTodo,
     live: "https://my-todo-real.netlify.app/",
     link: "https://github.com/ibrahim11elian/My-Todo",
     tags: ["HTML5", "CSS", "ReactJS", "local-storage"],
@@ -65,7 +75,7 @@ export const data = [
   {
     id: 7,
     name: "Yellow Moon",
-    img: "./images/projects/yellow.png",
+    img: YellowMoon,
     live: "https://ibrahim11elian.github.io/yellow-moon/",
     link: "https://github.com/ibrahim11elian/yellow-moon",
     tags: ["HTML5", "CSS", "Font ِwesome"],
@@ -81,7 +91,7 @@ export const data = [
   {
     id: 9,
     name: "Advice generator app",
-    img: "./images/projects/advice.jpg",
+    img: AdviceGenerator,
     live: "https://ibrahim11elian.github.io/advice-generator-app/",
     link: "https://github.com/ibrahim11elian/advice-generator-app",
     tags: ["HTML5", "CSS", "javascript", "ES6", "API"],
@@ -90,7 +100,7 @@ export const data = [
   {
     id: 10,
     name: "Online Education - landing page",
-    img: "./images/projects/education.png",
+    img: OnlineEducation,
     live: "https://online-education-landing-page.netlify.app/",
     link: "https://github.com/ibrahim11elian/online-education-landing-page",
     tags: ["HTML5", "CSS", "javascript", "ES6"],
@@ -99,7 +109,7 @@ export const data = [
   {
     id: 11,
     name: "E-commerce product page",
-    img: "./images/projects/e-commerce.jpg",
+    img: ECommerceProduct,
     live: "https://ibrahim11elian.github.io/E-commerce-product-page/",
     link: "https://github.com/ibrahim11elian/E-commerce-product-page",
     tags: ["HTML5", "CSS", "javascript", "ES6"],
