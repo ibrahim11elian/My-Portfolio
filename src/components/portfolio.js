@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { data } from "../data/projects_data";
-const backImage = "./images/back.svg";
+const backImage = "../images/back.svg";
 
 // Portfolio component
 function Portfolio() {
