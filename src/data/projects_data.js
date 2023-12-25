@@ -7,6 +7,7 @@ import YellowMoon from "../images/projects/yellow.png";
 import AdviceGenerator from "../images/projects/advice.jpg";
 import OnlineEducation from "../images/projects/education.png";
 import ECommerceProduct from "../images/projects/e-commerce.jpg";
+import SnapQuizBuilder from "../images/projects/snapQuiz-builder.png";
 
 // all data about the projects rendered in my portfolio
 export const data = [
@@ -113,6 +114,15 @@ export const data = [
     live: "https://ibrahim11elian.github.io/E-commerce-product-page/",
     link: "https://github.com/ibrahim11elian/E-commerce-product-page",
     tags: ["HTML5", "CSS", "javascript", "ES6"],
+    category: "front",
+  },
+  {
+    id: 12,
+    name: "SnapQuiz Builder",
+    img: SnapQuizBuilder,
+    live: "https://snap-quiz-builder.netlify.app/",
+    link: "https://github.com/ibrahim11elian/SnapQuiz-Builder",
+    tags: ["HTML5", "CSS3", "ReactJS", "Vite"],
     category: "front",
   },
 ];
