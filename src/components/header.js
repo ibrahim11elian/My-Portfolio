@@ -3,16 +3,14 @@ import { useAppContext } from "../utilities/context";
 
 function Header() {
   // Destructure values from the app context
-  const { theme, active, setActive, toggleMenu, toggleTheme } = useAppContext();
+  const { theme, active, toggleMenu, toggleTheme } = useAppContext();
 
   // Handle scroll events
-  window.onscroll = () => {
-    if (active === "active") {
+  if (active === "active") {
+    window.onscroll = () => {
       // Close the menu if the screen is less than 991 pixels wide
       if (window.innerWidth < 991) {
-        setActive(() => "");
-        document.body.classList.remove("active");
-        document.querySelector(".menu-icon").classList.remove("fa-xmark");
+        toggleMenu();
       }
 
       // Highlight the navigation link corresponding to the current section
@@ -33,15 +31,7 @@ function Header() {
             });
         }
       });
-    }
-  };
-
-  // Set the active navigation link on click
-  function setSectionActive(e) {
-    document.querySelectorAll(".nav-container ul li a").forEach((links) => {
-      links.classList.remove("active");
-    });
-    e.target.classList.add("active");
+    };
   }
 
   // Navigation links
@@ -102,7 +92,7 @@ function Header() {
         </div>
 
         {/* Navigation links */}
-        <div className="nav-container" onClick={(e) => setSectionActive(e)}>
+        <div className="nav-container">
           <ul>
             {navigation.map((element, index) => {
               return (
