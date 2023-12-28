@@ -751,6 +751,12 @@ label {
   background: var(--yellow) !important;
 }
 
+@media (max-width: 1100px) {
+  .app.active {
+    padding-left: 0;
+  }
+}
+
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991px) {
   html {
@@ -760,10 +766,6 @@ label {
   .home {
     gap: 1rem;
     min-height: fit-content;
-  }
-
-  .app.active {
-    padding-left: 0;
   }
 }
 
