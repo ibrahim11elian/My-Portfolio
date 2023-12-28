@@ -31,7 +31,7 @@ export const AppContextProvider = ({ children }) => {
   const [active, setActive] = useState("");
 
   const toggleMenu = () => {
-    setActive(() => (active === "active" ? "" : "active"));
+    setActive((current) => (current === "active" ? "" : "active"));
   };
 
   // Provide the values to the context provider
