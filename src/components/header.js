@@ -3,14 +3,14 @@ import { useAppContext } from "../utilities/context";
 
 function Header() {
   // Destructure values from the app context
-  const { theme, active, toggleMenu, toggleTheme } = useAppContext();
+  const { theme, active, toggleMenu, toggleTheme, setActive } = useAppContext();
 
   // Handle scroll events
   if (active === "active") {
     window.onscroll = () => {
       // Close the menu if the screen is less than 991 pixels wide
       if (window.innerWidth < 991) {
-        toggleMenu();
+        setActive(() => "");
       }
 
       // Highlight the navigation link corresponding to the current section
