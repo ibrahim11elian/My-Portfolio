@@ -4,6 +4,7 @@ export const skills = {
   JavaScript: "javascript/javascript-original.svg",
   Typescript: "typescript/typescript-original.svg",
   ReactJS: "react/react-original.svg",
+  Redux: "redux/redux-original.svg",
   Nodejs: "nodejs/nodejs-original.svg",
   Expressjs: "express/express-original.svg",
   PostgreSQL: "postgresql/postgresql-original.svg",
