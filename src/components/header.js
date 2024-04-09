@@ -103,6 +103,15 @@ function Header() {
                 </li>
               );
             })}
+            <li>
+              <a
+                href={"https://script-symphony.vercel.app/"}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Blog
+              </a>
+            </li>
           </ul>
         </div>
 
