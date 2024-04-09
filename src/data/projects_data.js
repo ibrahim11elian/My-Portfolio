@@ -8,9 +8,50 @@ import AdviceGenerator from "../images/projects/advice.jpg";
 import OnlineEducation from "../images/projects/education.png";
 import ECommerceProduct from "../images/projects/e-commerce.jpg";
 import SnapQuizBuilder from "../images/projects/snapQuiz-builder.png";
+import ScriptSymphony from "../images/projects/blog.png";
+import PostGraduateJournal from "../images/projects/post-graduate.png";
 
 // all data about the projects rendered in my portfolio
 export const data = [
+  {
+    id: 14,
+    name: "Script Symphony Backend",
+    link: "https://github.com/ibrahim11elian/scriptSymphony-backend",
+    tags: [
+      "PostgreSQL",
+      "Node JS",
+      "Express JS",
+      "typescript",
+      "jsonwebtoken",
+      "Jest",
+      "Cloudinary",
+    ],
+    category: "back",
+  },
+  {
+    id: 13,
+    name: "Script Symphony",
+    img: ScriptSymphony,
+    live: "https://script-symphony.vercel.app/",
+    link: "https://github.com/ibrahim11elian/My-Blog",
+    tags: ["HTML5", "CSS", "ReactJS", "Redux", "Axios", "vite"],
+    category: "front",
+  },
+  {
+    id: 15,
+    name: "Post graduate journal",
+    img: PostGraduateJournal,
+    link: "https://github.com/ibrahim11elian/post-graduate-journal-system",
+    tags: [
+      "ReactJS",
+      "Axios",
+      "bootstrap",
+      " Express.js",
+      "Typescript",
+      "PostgreSQL",
+    ],
+    category: "full",
+  },
   {
     id: 1,
     name: "Password generator app",
