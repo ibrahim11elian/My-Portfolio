@@ -404,7 +404,7 @@ label {
 
 .nav-container ul li a {
   display: block;
-  padding: 1rem 5rem;
+  padding: 0.8rem 5rem;
   text-align: center;
   font-size: 1.8rem;
   color: var(--text-color);
@@ -574,7 +574,7 @@ label {
   height: 100%;
   background: var(--color-transparent);
   text-align: center;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 1rem;
   overflow: hidden;
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -770,6 +770,9 @@ label {
 }
 
 @media (max-width: 850px) {
+  .project .project-info {
+    padding-top: 3rem !important;
+  }
   .project .project-info .links .btn {
     padding: 0.5rem 1rem;
   }
@@ -811,6 +814,11 @@ label {
 
   .edu-list {
     width: 100%;
+  }
+
+  .filter li .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
 
   .project .project-info {
@@ -862,11 +870,6 @@ label {
 
   .info {
     width: 100%;
-  }
-
-  .filter li .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
   }
 
   .project {
