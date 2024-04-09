@@ -8,6 +8,7 @@ export const skills = {
   Nodejs: "nodejs/nodejs-original.svg",
   Expressjs: "express/express-original.svg",
   PostgreSQL: "postgresql/postgresql-original.svg",
+  Jest: "jest/jest-plain.svg",
   Jasmine: "jasmine/jasmine-original.svg",
   Bootstrap: "bootstrap/bootstrap-original.svg",
   Sass: "sass/sass-original.svg",
@@ -16,4 +17,7 @@ export const skills = {
   vscode: "vscode/vscode-original.svg",
   C: "c/c-original.svg",
   Python: "python/python-original.svg",
+  Netlify: "netlify/netlify-original.svg",
+  Vercel: "vercel/vercel-original-wordmark.svg",
+  Heroku: "heroku/heroku-original.svg",
 };
