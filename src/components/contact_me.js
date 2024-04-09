@@ -84,7 +84,6 @@ function ContactMe() {
       <form action="" onSubmit={(e) => sendEmail(e)} className="contact-form">
         {/* Name input */}
         <input
-          data-aos="fade-right"
           type="text"
           name="name"
           placeholder="Enter your name"
@@ -95,7 +94,6 @@ function ContactMe() {
 
         {/* Email input */}
         <input
-          data-aos="fade-left"
           type="email"
           name="email"
           placeholder="Enter your email"
@@ -108,7 +106,6 @@ function ContactMe() {
 
         {/* Phone number input */}
         <input
-          data-aos="fade-up"
           type="number"
           min="0"
           name="number"
@@ -122,7 +119,6 @@ function ContactMe() {
 
         {/* Message textarea */}
         <textarea
-          data-aos="fade-up"
           name="message"
           className="text-box"
           required
@@ -135,7 +131,6 @@ function ContactMe() {
         {/* Submit button */}
         <input
           type="submit"
-          data-aos="zoom-in"
           value="Send message"
           name="send"
           className="btn"
@@ -146,7 +141,7 @@ function ContactMe() {
       {/* Contact information boxes */}
       <div className="box-container">
         {/* Phone box */}
-        <div className="box" data-aos="zoom-in">
+        <div className="box">
           <span>
             <i className="fas fa-phone" />
           </span>
@@ -155,7 +150,7 @@ function ContactMe() {
         </div>
 
         {/* Email box */}
-        <div className="box" data-aos="zoom-in">
+        <div className="box">
           <span>
             <i className="fas fa-envelope" />
           </span>
@@ -164,7 +159,7 @@ function ContactMe() {
         </div>
 
         {/* Address box */}
-        <div className="box" data-aos="zoom-in">
+        <div className="box">
           <span>
             <i className="fas fa-map-marker-alt" />
           </span>
