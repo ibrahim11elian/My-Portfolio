@@ -46,7 +46,7 @@ function Biography() {
 
         <li>
           <span className="type">age: </span>
-          <p className="data"> 23 Years</p>
+          <p className="data"> {new Date().getFullYear() - 2000} Years</p>
         </li>
 
         <li>
