@@ -14,6 +14,21 @@ import PostGraduateJournal from "../images/projects/post-graduate.png";
 // all data about the projects rendered in my portfolio
 export const data = [
   {
+    id: 15,
+    name: "PeakBooker API",
+    link: "https://github.com/ibrahim11elian/PeakBooker",
+    tags: [
+      "MongoDb",
+      "Node JS",
+      "Express JS",
+      "Stripe",
+      "jsonwebtoken",
+      "Firebase",
+      "SendGrid",
+    ],
+    category: "back",
+  },
+  {
     id: 14,
     name: "Script Symphony Backend",
     link: "https://github.com/ibrahim11elian/scriptSymphony-backend",
