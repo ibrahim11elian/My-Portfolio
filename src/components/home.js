@@ -33,7 +33,7 @@ function Home({ active }) {
         <h1 className="name">hi, i am ibrahim ahmed </h1>
 
         <div className="position" data-aos="fade-up">
-          PERN stack developer
+          Software Engineer
         </div>
 
         <p data-aos="fade-up">
