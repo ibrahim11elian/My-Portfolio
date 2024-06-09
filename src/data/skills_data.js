@@ -8,6 +8,8 @@ export const skills = {
   Nodejs: "nodejs/nodejs-original.svg",
   Expressjs: "express/express-original.svg",
   PostgreSQL: "postgresql/postgresql-original.svg",
+  MongoDB: "mongodb/mongodb-original-wordmark.svg",
+  Mongoose: "mongoose/mongoose-original-wordmark.svg",
   Jest: "jest/jest-plain.svg",
   Jasmine: "jasmine/jasmine-original.svg",
   Bootstrap: "bootstrap/bootstrap-original.svg",
