@@ -10,9 +10,19 @@ import ECommerceProduct from "../images/projects/e-commerce.jpg";
 import SnapQuizBuilder from "../images/projects/snapQuiz-builder.png";
 import ScriptSymphony from "../images/projects/blog.png";
 import PostGraduateJournal from "../images/projects/post-graduate.png";
+import WorldWise from "../images/projects/worldWise.png";
 
 // all data about the projects rendered in my portfolio
 export const data = [
+  {
+    id: 17,
+    name: "WorldWise",
+    link: "https://github.com/ibrahim11elian/worldwise",
+    live: "https://world-wise-traveling.vercel.app/",
+    tags: ["React", "React-Router", "Context-API"],
+    img: WorldWise,
+    category: "front",
+  },
   {
     id: 16,
     name: "E-Buy API",
