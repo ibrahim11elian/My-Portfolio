@@ -69,12 +69,13 @@ function Header() {
           ></input>
           <label htmlFor="toggle_checkbox">
             <div id="star">
-              <div className="star" id="star-1">
+              ☀️
+              {/* <div className="star" id="star-1">
                 ★
               </div>
               <div className="star" id="star-2">
                 ★
-              </div>
+              </div> */}
             </div>
             <div id="moon"></div>
           </label>
