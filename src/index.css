@@ -903,6 +903,14 @@ label {
     width: 100%;
   }
 
+  .filter {
+    gap: 0.5rem;
+  }
+
+  .filter li .btn {
+    padding: 0.5rem 0.5rem;
+  }
+
   .box {
     grid-column: 1/3;
   }
