@@ -32,7 +32,7 @@ function Education() {
         </li>
 
         {/* Second education item */}
-        <li className="item" data-aos="fade-right">
+        {/* <li className="item" data-aos="fade-right">
           <div className="date">
             (<span className="start-date">2021</span> -{" "}
             <span className="end-date">2022</span>)
@@ -44,7 +44,7 @@ function Education() {
           <div className="details">
             <p>Technical Training:</p>
             <ul>
-              {/* List of technical training points */}
+              
               <li>- Learn JavaScript Data Types</li>
               <li>- Understand logic and control flow</li>
               <li>- Learn how to write proper and correct JavaScript Syntax</li>
@@ -52,7 +52,6 @@ function Education() {
               <li>- Modify web content using Javascript</li>
               <li>- Manage website performance</li>
             </ul>
-            {/* Link to the certificate */}
             <a
               href="https://graduation.udacity.com/confirm/9DHPDSHP"
               target={"_blank"}
@@ -60,10 +59,10 @@ function Education() {
               certificate link
             </a>
           </div>
-        </li>
+        </li> */}
 
         {/* Third education item */}
-        <li className="item" data-aos="fade-left">
+        {/* <li className="item" data-aos="fade-left">
           <div className="date">
             (<span className="start-date">2022</span> -{" "}
             <span className="end-date">2022</span>)
@@ -75,7 +74,7 @@ function Education() {
           <div className="details">
             <p>Technical Training:</p>
             <ul>
-              {/* List of technical training points */}
+              
               <li>
                 - Understand the fundamental tools needed to build a basic API
                 in a way that is both scalable, and maintainable.
@@ -84,7 +83,7 @@ function Education() {
                 - Write TypeScript to reduce developing errors. Manage
                 async/await, promises, and error handling with TypeScript.
               </li>
-              {/* Additional technical training points */}
+             
               <li>
                 - Create test units with Jasmine. Use Express to build APIs.
               </li>
@@ -102,7 +101,6 @@ function Education() {
               <li>- Build an automated pipeline and scripts.</li>
               <li>- Create documentation using markdown files and diagrams.</li>
             </ul>
-            {/* Link to the certificate */}
             <a
               href="https://graduation.udacity.com/confirm/HXYGKYQZ"
               target={"_blank"}
@@ -110,7 +108,7 @@ function Education() {
               certificate link
             </a>
           </div>
-        </li>
+        </li> */}
       </ul>
     </section>
   );
