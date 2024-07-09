@@ -11,11 +11,21 @@ import SnapQuizBuilder from "../images/projects/snapQuiz-builder.png";
 import ScriptSymphony from "../images/projects/blog.png";
 import PostGraduateJournal from "../images/projects/post-graduate.png";
 import WorldWise from "../images/projects/worldWise.png";
+import FastPizza from "../images/projects/fast-pizza.png";
 
 // all data about the projects rendered in my portfolio
 export const data = [
   {
-    id: 17,
+    id: 19,
+    name: "Fast Pizza",
+    link: "https://github.com/ibrahim11elian/fast-pizza-app",
+    live: "https://fast-pizza-app-jet.vercel.app/",
+    tags: ["React", "React-Router", "Redux", "Tailwind"],
+    img: FastPizza,
+    category: "front",
+  },
+  {
+    id: 18,
     name: "WorldWise",
     link: "https://github.com/ibrahim11elian/worldwise",
     live: "https://world-wise-traveling.vercel.app/",
@@ -24,9 +34,10 @@ export const data = [
     category: "front",
   },
   {
-    id: 16,
+    id: 17,
     name: "E-Buy API",
     link: "https://github.com/ibrahim11elian/e-buy",
+    live: "https://e-buy-sigma.vercel.app/",
     tags: [
       "MongoDb",
       "Node JS",
@@ -40,9 +51,10 @@ export const data = [
     category: "back",
   },
   {
-    id: 15,
+    id: 16,
     name: "PeakBooker API",
     link: "https://github.com/ibrahim11elian/PeakBooker",
+    live: "https://peakbooker.vercel.app/",
     tags: [
       "MongoDb",
       "Node JS",
@@ -58,6 +70,7 @@ export const data = [
     id: 14,
     name: "Script Symphony Backend",
     link: "https://github.com/ibrahim11elian/scriptSymphony-backend",
+    live: "https://script-symphony.vercel.app/",
     tags: [
       "PostgreSQL",
       "Node JS",
