@@ -14,6 +14,7 @@ export const skills = {
   Jasmine: "jasmine/jasmine-original.svg",
   Bootstrap: "bootstrap/bootstrap-original.svg",
   Sass: "sass/sass-original.svg",
+  Tailwind: "tailwindcss/tailwindcss-original.svg",
   Git: "git/git-original.svg",
   Github: "github/github-original.svg",
   vscode: "vscode/vscode-original.svg",
