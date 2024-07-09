@@ -10,13 +10,12 @@ const eData = {
   msg: undefined,
 };
 
+const MY_EMAIL = "ibrahim11elian@gmail.com";
+
 function ContactMe() {
   // State to manage the form data
   const [emailData, setEmailData] = useState({ ...eData });
-
-  // Elastic Email API key
-  const apiKey =
-    "CD1150CC9C4E6FC3A2A80FDF826A8B99154F62E90380B37B01B32FA34C824FE1C27AB14D4B46F963C57EAEFB86B7396D";
+  const [isLoading, setIsLoading] = useState(false);
 
   // Toast configuration options
   const alertOptions = {
@@ -50,24 +49,37 @@ function ContactMe() {
     const msg = emailData.msg;
 
     try {
+      setIsLoading(true);
       // Send the email using the Elastic Email API
       const response = await fetch(
-        `https://api.elasticemail.com/v2/email/send?apikey=${apiKey}&bodyText=${msg}&from=${senderEmail}&senderName=${senderName}-phone:${senderPhone}&subject=EmailFromMyPortfolio&msgTo=ibrahim11elian@gmail.com&`,
+        `https://sigma-email-sender.vercel.app/api/v1/email`,
         {
           method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: senderName,
+            email: senderEmail,
+            phone: senderPhone,
+            message: msg,
+            to: MY_EMAIL,
+          }),
         }
       );
 
       // Check if the email was sent successfully
-      const responseBody = await response.json();
-      if (responseBody.success) {
+      if (response.ok) {
         success("Email sent successfully!");
+        setEmailData({ ...eData });
       } else {
         throw new Error("Error sending email.");
       }
     } catch (error) {
       console.error(error);
       errorMsg("An error occurred while sending the email.");
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -131,9 +143,10 @@ function ContactMe() {
         {/* Submit button */}
         <input
           type="submit"
-          value="Send message"
+          value={isLoading ? "Sending..." : "Send message"}
           name="send"
           className="btn"
+          disabled={isLoading}
           onClick={(e) => sendEmail(e)}
         ></input>
       </form>
