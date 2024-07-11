@@ -1,6 +1,6 @@
-import { SitemapStream, streamToPromise } from "sitemap";
-import { createWriteStream } from "fs";
-import { join } from "path";
+const { SitemapStream, streamToPromise } = require("sitemap");
+const { createWriteStream } = require("fs");
+const path = require("path");
 
 const links = [
   { url: "/", changefreq: "daily", priority: 0.7 },
@@ -11,7 +11,9 @@ const links = [
 const sitemap = new SitemapStream({
   hostname: "https://ibrahim-ahmed.netlify.app",
 });
-const writeStream = createWriteStream(join(__dirname, "public", "sitemap.xml"));
+const writeStream = createWriteStream(
+  path.join(__dirname, "public", "sitemap.xml")
+);
 
 streamToPromise(sitemap.pipe(writeStream)).then(() => {
   console.log("Sitemap created!");
