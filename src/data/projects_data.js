@@ -4,17 +4,27 @@ import WeatherJournalApp from "../images/projects/weather.png";
 import ShortlyURL from "../images/projects/shortly.jpg";
 import MyTodo from "../images/projects/todo.jpg";
 import YellowMoon from "../images/projects/yellow.png";
-import AdviceGenerator from "../images/projects/advice.jpg";
 import OnlineEducation from "../images/projects/education.png";
 import ECommerceProduct from "../images/projects/e-commerce.jpg";
-import SnapQuizBuilder from "../images/projects/snapQuiz-builder.png";
+// import AdviceGenerator from "../images/projects/advice.jpg";
+// import SnapQuizBuilder from "../images/projects/snapQuiz-builder.png";
 import ScriptSymphony from "../images/projects/blog.png";
 import PostGraduateJournal from "../images/projects/post-graduate.png";
 import WorldWise from "../images/projects/worldWise.png";
 import FastPizza from "../images/projects/fast-pizza.png";
+import HotelDashboard from "../images/projects/hotel-dashboard.png";
 
 // all data about the projects rendered in my portfolio
 export const data = [
+  {
+    id: 20,
+    name: "Hotel Dashboard",
+    link: "https://github.com/ibrahim11elian/hotel-dashboard",
+    live: "https://the-wild-oasis-hotel-sigma.vercel.app",
+    tags: ["React", "React-Router", "React-Query", "Tailwind"],
+    img: HotelDashboard,
+    category: "front",
+  },
   {
     id: 19,
     name: "Fast Pizza",
@@ -184,15 +194,15 @@ export const data = [
     tags: ["NodeJS", "ExpressJS", "typescript", "Jasmine", "API"],
     category: "back",
   },
-  {
-    id: 9,
-    name: "Advice generator app",
-    img: AdviceGenerator,
-    live: "https://ibrahim11elian.github.io/advice-generator-app/",
-    link: "https://github.com/ibrahim11elian/advice-generator-app",
-    tags: ["HTML5", "CSS", "javascript", "ES6", "API"],
-    category: "front",
-  },
+  // {
+  //   id: 9,
+  //   name: "Advice generator app",
+  //   img: AdviceGenerator,
+  //   live: "https://ibrahim11elian.github.io/advice-generator-app/",
+  //   link: "https://github.com/ibrahim11elian/advice-generator-app",
+  //   tags: ["HTML5", "CSS", "javascript", "ES6", "API"],
+  //   category: "front",
+  // },
   {
     id: 10,
     name: "Online Education - landing page",
@@ -211,13 +221,13 @@ export const data = [
     tags: ["HTML5", "CSS", "javascript", "ES6"],
     category: "front",
   },
-  {
-    id: 12,
-    name: "SnapQuiz Builder",
-    img: SnapQuizBuilder,
-    live: "https://snap-quiz-builder.netlify.app/",
-    link: "https://github.com/ibrahim11elian/SnapQuiz-Builder",
-    tags: ["HTML5", "CSS3", "ReactJS", "Vite"],
-    category: "front",
-  },
+  // {
+  //   id: 12,
+  //   name: "SnapQuiz Builder",
+  //   img: SnapQuizBuilder,
+  //   live: "https://snap-quiz-builder.netlify.app/",
+  //   link: "https://github.com/ibrahim11elian/SnapQuiz-Builder",
+  //   tags: ["HTML5", "CSS3", "ReactJS", "Vite"],
+  //   category: "front",
+  // },
 ];
