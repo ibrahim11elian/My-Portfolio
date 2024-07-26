@@ -13,9 +13,19 @@ import PostGraduateJournal from "../images/projects/post-graduate.png";
 import WorldWise from "../images/projects/worldWise.png";
 import FastPizza from "../images/projects/fast-pizza.png";
 import HotelDashboard from "../images/projects/hotel-dashboard.png";
+import Unsplash from "../images/projects/unsplash.png";
 
 // all data about the projects rendered in my portfolio
 export const data = [
+  {
+    id: 21,
+    name: "Unsplash Box",
+    link: "https://github.com/ibrahim11elian/unsplash-box",
+    live: "https://unsplash-collection-box.vercel.app",
+    tags: ["React", "React-Router", "React-Query", "Firebase", "Tailwind"],
+    img: Unsplash,
+    category: "front",
+  },
   {
     id: 20,
     name: "Hotel Dashboard",
