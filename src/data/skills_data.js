@@ -23,4 +23,6 @@ export const skills = {
   Netlify: "netlify/netlify-original.svg",
   Vercel: "vercel/vercel-original-wordmark.svg",
   Heroku: "heroku/heroku-original.svg",
+  Firebase: "firebase/firebase-original.svg",
+  Supabase: "supabase/supabase-original.svg",
 };
