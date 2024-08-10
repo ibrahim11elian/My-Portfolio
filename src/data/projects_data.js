@@ -21,7 +21,7 @@ import SpaceTourism from "../images/projects/space-tourism.jpg";
 export const data = [
   {
     id: 23,
-    name: "Space Tourism",
+    name: "Space Tourism Website",
     link: "https://github.com/ibrahim11elian/space-tourism",
     live: "https://space-tourism-company.vercel.app/",
     tags: ["Next.js", "Tailwind CSS"],
