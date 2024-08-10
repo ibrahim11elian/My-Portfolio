@@ -14,9 +14,29 @@ import WorldWise from "../images/projects/worldWise.png";
 import FastPizza from "../images/projects/fast-pizza.png";
 import HotelDashboard from "../images/projects/hotel-dashboard.png";
 import Unsplash from "../images/projects/unsplash.png";
+import WildOasisWebsite from "../images/projects/wild-oasis-website.png";
+import SpaceTourism from "../images/projects/space-tourism.jpg";
 
 // all data about the projects rendered in my portfolio
 export const data = [
+  {
+    id: 23,
+    name: "Space Tourism",
+    link: "https://github.com/ibrahim11elian/space-tourism",
+    live: "https://space-tourism-company.vercel.app/",
+    tags: ["Next.js", "Tailwind CSS"],
+    img: SpaceTourism,
+    category: "front",
+  },
+  {
+    id: 22,
+    name: "Hotel Reservation App",
+    link: "https://github.com/ibrahim11elian/hotel-reservation-app",
+    live: "https://hotel-reservation-application.vercel.app/",
+    tags: ["Next.js", "Tailwind CSS", "Supabase"],
+    img: WildOasisWebsite,
+    category: "full",
+  },
   {
     id: 21,
     name: "Unsplash Box",
